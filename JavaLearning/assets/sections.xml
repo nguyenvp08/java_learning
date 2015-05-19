@@ -1,0 +1,67 @@
+{
+    "sections": [
+        {
+            "id": "1",
+            "lesson_id": "1",
+            "media_type": "1",
+            "text": "<h1>\tSource File</h1>All Java source file must end with an \".java\" extension. A source file should contain on public class defination, and also the class name should match the unextended filename.",
+            "image": ""
+        },
+        {
+            "id": "2",
+            "lesson_id": "1",
+            "media_type": "1",
+            "text": "Three top-level elements known as compilation units may occur in a file. None of them is required, but the order must follow the rule:<br/><b>1.</b>\tPackage declaration<br/><b>2.</b>\tImport statements<br/><b>3.</b>\tClass, interface and enum definitions",
+            "image": ""
+        },
+        {
+            "id": "3",
+            "lesson_id": "1",
+            "media_type": "1",
+            "text": "The keyword \"package\" occurs first and is follow by package name. You can import a class in package or the entire package, just simply place the fully class name after import keyword.",
+            "image": ""
+        },
+        {
+            "id": "4",
+            "lesson_id": "1",
+            "media_type": "1",
+            "text": "Example for a Java source file : ",
+            "image": ""
+        },
+        {
+            "id": "5",
+            "lesson_id": "1",
+            "media_type": "3",
+            "text": "",
+            "image": "image/image_1.png"
+        },
+        {
+            "id": "6",
+            "lesson_id": "2",
+            "media_type": "1",
+            "text": "<h1>\tKeywords and Identifiers </h1>A keyword is a word whose meaning is defined by the programming language",
+            "image": ""
+        },
+        {
+            "id": "7",
+            "lesson_id": "2",
+            "media_type": "1",
+            "text": "Keyword and \"goto\", \"const\", and others \"reserved words\", programmer may not use them as identifiers, it may cause compilation error.",
+            "image": ""
+        }, 
+        {
+            "id": "8",
+            "lesson_id": "2",
+            "media_type": "1",
+            "text": "Keyword and \"goto\", \"const\", and others \"reserved words\", programmer may not use them as identifiers, it may cause compilation error.",
+            "image": ""
+        },
+        {
+            "id": "9",
+            "lesson_id": "2",
+            "media_type": "3",
+            "text": "",
+            "image": "image/image_2.png"
+        }
+    ]
+}
