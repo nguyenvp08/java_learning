@@ -62,6 +62,41 @@
             "media_type": "3",
             "text": "",
             "image": "image/image_2.png"
+        },
+        {
+            "id": "10",
+            "lesson_id": "2",
+            "media_type": "1",
+            "text": "An identifier is a word used by programmer to name a variable, method, class, or label. An identifier must begin with a letter, a dollar sign($), or underscore(_)",
+            "image": ""
+        }, 
+       	{
+            "id": "11",
+            "lesson_id": "2",
+            "media_type": "1",
+            "text": "Some examples are : ",
+            "image": ""
+        }, 
+       	{
+            "id": "12",
+            "lesson_id": "2",
+            "media_type": "2",
+            "text": "foobar\t\t\t// legal<br/>CAPclass\t// legal: embedded keywords are ok<br/>$incomeAfterTaxes\t\t// legal<br/>3_node5\t\t\t// illegal: starts with a digit<br/>!theCase\t\t// illegal: bad 1st char",
+            "image": ""
+        }, 
+       	{
+            "id": "13",
+            "lesson_id": "2",
+            "media_type": "1",
+            "text": "Identifiers are case sensitive for example, \"iden\" and \"IDen\" are distinct identifiers.",
+            "image": ""
+        }, 
+       	{
+            "id": "14",
+            "lesson_id": "3",
+            "media_type": "3",
+            "text": "",
+            "image": "image/image_3.png"
         }
     ]
 }

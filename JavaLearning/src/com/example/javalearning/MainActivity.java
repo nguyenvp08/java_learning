@@ -5,25 +5,21 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-import com.example.javalearning.model.Section;
-import com.example.javalearning.model.Sections;
-import com.example.javalearning.view.TextContentView;
-import com.example.javalearning.view.touch.ImageViewTouch;
-import com.example.javalearning.view.touch.ImageViewTouchBase.DisplayType;
-import com.google.gson.GsonBuilder;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Build;
 import android.os.Bundle;
-import android.text.Html;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout.LayoutParams;
-import android.widget.TextView;
+
+import com.example.javalearning.model.Section;
+import com.example.javalearning.model.Sections;
+import com.example.javalearning.view.ConsolaContentView;
+import com.example.javalearning.view.TextContentView;
+import com.google.gson.GsonBuilder;
 
 public class MainActivity extends Activity {
 
@@ -56,6 +52,12 @@ public class MainActivity extends Activity {
 				mRootLayout.addView(contentView);
 				contentView.setText(section.text);
 			}
+			
+			if (section.mediaType == 2) {
+				ConsolaContentView contentView = new ConsolaContentView(this);
+				mRootLayout.addView(contentView);
+				contentView.setText(section.text);
+			}
 
 			if (section.mediaType == 3) {
 				ImageView touch = new ImageView(this);
@@ -66,6 +68,7 @@ public class MainActivity extends Activity {
 					param.setMargins(16, 0, 16, 16);
 					touch.setLayoutParams(param);
 					touch.setTag(section.imagePath);
+					touch.setAdjustViewBounds(true);
 					
 					if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN_MR1) {
 						touch.setImageDrawable(new BitmapDrawable(

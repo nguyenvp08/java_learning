@@ -1,15 +1,14 @@
 package com.example.javalearning.view;
 
-import com.example.javalearning.R;
-
 import android.content.Context;
 import android.content.res.Resources;
 import android.text.Html;
 import android.util.AttributeSet;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.javalearning.R;
 
 public class TextContentView extends LinearLayout {
 
