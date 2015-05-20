@@ -18,6 +18,8 @@ import android.widget.LinearLayout.LayoutParams;
 import com.example.javalearning.model.Section;
 import com.example.javalearning.model.Sections;
 import com.example.javalearning.view.ConsolaContentView;
+import com.example.javalearning.view.FitWidthImageView;
+import com.example.javalearning.view.NoteView;
 import com.example.javalearning.view.TextContentView;
 import com.google.gson.GsonBuilder;
 
@@ -60,7 +62,7 @@ public class MainActivity extends Activity {
 			}
 
 			if (section.mediaType == 3) {
-				ImageView touch = new ImageView(this);
+				ImageView touch = new FitWidthImageView(this);
 				try {
 					LinearLayout.LayoutParams param = new LinearLayout.LayoutParams(
 							LayoutParams.MATCH_PARENT,
@@ -86,6 +88,12 @@ public class MainActivity extends Activity {
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
+			}
+			
+			if (section.mediaType == 4) {
+				NoteView noteView = new NoteView(this);
+				mRootLayout.addView(noteView);
+				noteView.setText(section.text);
 			}
 		}
 	}

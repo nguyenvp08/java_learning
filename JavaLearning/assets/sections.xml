@@ -90,13 +90,104 @@
             "media_type": "1",
             "text": "Identifiers are case sensitive for example, \"iden\" and \"IDen\" are distinct identifiers.",
             "image": ""
-        }, 
-       	{
+        },
+        {
             "id": "14",
+            "lesson_id": "3",
+            "media_type": "1",
+            "text": "<h1>\tPrimitive Data Types</h1>A primitive is a simple non-object data type that represents a single value",
+            "image": ""
+        },
+        {
+            "id": "15",
+            "lesson_id": "3",
+            "media_type": "1",
+            "text": "All java primitive type are : ",
+            "image": ""
+        },
+        {
+            "id": "16",
+            "lesson_id": "3",
+            "media_type": "2",
+            "text": "<b>Type</b>\t\t\t\t\t\t\t\t\t\t\t\t<b>Size (bits)</b><br/>byte\t\t\t\t\t\t\t\t\t\t\t\t8<br/>char\t\t\t\t\t\t\t\t\t\t\t\t16<br/>short\t\t\t\t\t\t\t\t\t\t\t\t16<br/>int\t\t\t\t\t\t\t\t\t\t\t\t\t32<br/>float\t\t\t\t\t\t\t\t\t\t\t\t32<br/>double\t\t\t\t\t\t\t\t\t\t\t64<br/>long\t\t\t\t\t\t\t\t\t\t\t\t64",
+            "image": ""
+        },
+        {
+            "id": "17",
+            "lesson_id": "3",
+            "media_type": "1",
+            "text": "And the range value : ",
+            "image": ""
+        },
+       	{
+            "id": "18",
             "lesson_id": "3",
             "media_type": "3",
             "text": "",
             "image": "image/image_3.png"
+        },
+        {
+            "id": "19",
+            "lesson_id": "3",
+            "media_type": "3",
+            "text": "",
+            "image": "image/image_4.png"
+        }
+        ,{
+            "id": "20",
+            "lesson_id": "3",
+            "media_type": "1",
+            "text": "A char variable can't take the negative values, it is used to describe unicode character. primitive types can be divided into 2 groups : precise (boolean, byte, char, short, int, long) and non-precise(float and double)",
+            "image": ""
+        }
+        ,{
+            "id": "21",
+            "lesson_id": "3",
+            "media_type": "4",
+            "text": "Note : You need to be careful to compare 2 non-precise data type variables (float and double), especially equal operator ",
+            "image": ""
+        }
+        ,{
+            "id": "22",
+            "lesson_id": "4",
+            "media_type": "1",
+            "text": "<h1>\tLiterals</h1>A literal is a fixed-specified value of a primitive data type and also String data type.",
+            "image": ""
+        }
+        ,{
+            "id": "23",
+            "lesson_id": "4",
+            "media_type": "1",
+            "text": "the below are some examples : ",
+            "image": ""
+        }
+        ,{
+            "id": "24",
+            "lesson_id": "4",
+            "media_type": "2",
+            "text": "1. boolean oneBoolLiteral = <b>true</b>;<br/>2. byte byteVariable = <b>123</b>;<br/>3. char charVariable = <b>'C'</b>;<br/>4. double oneDoubleLiteral = <b>123.456D</b>;<br/>5. String oneStringLiteral = <b>\"Hello world\"</b>;",
+            "image": ""
+        }	
+        ,{
+            "id": "25",
+            "lesson_id": "4",
+            "media_type": "1",
+            "text": "Java supports a few special characters: ",
+            "image": ""
+        }
+        ,{
+            "id": "26",
+            "lesson_id": "4",
+            "media_type": "1",
+            "text": "\\n for new line<br/>\\r for return<br/>\\t for tab<br/>\\b for backspace<br/>\\f for formed<br/>\\' for single quote<br/>\\\\ for backsplash",
+            "image": ""
+        }
+        ,{
+            "id": "27",
+            "lesson_id": "4",
+            "media_type": "1",
+            "text": "Integer literals may be assigned to any numeric primitive data type. There are 3 types : default is decimal, octal will start with a 0 (zero) prefix, and hexadecimal prefix with an 0x or 0X, and the hex digits are insensitve",
+            "image": ""
         }
     ]
 }

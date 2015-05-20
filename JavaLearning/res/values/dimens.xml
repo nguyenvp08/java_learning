@@ -6,4 +6,6 @@
 
     <dimen name="text1_slide_width">6dp</dimen>
     <dimen name="text1_margin">8dp</dimen>
+    
+    <dimen name="note_view_padding">16dp</dimen>
 </resources>
