@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" 
+    android:padding="@dimen/note_view_padding">
+    
+    <corners
+        android:bottomRightRadius="@dimen/note_view_padding"
+        android:bottomLeftRadius="@dimen/note_view_padding"
+        android:topLeftRadius="@dimen/note_view_padding"
+        android:topRightRadius="@dimen/note_view_padding"/>
+    
+    <stroke android:width="1dp" android:color="@color/color_orange"/>
+</shape>	
