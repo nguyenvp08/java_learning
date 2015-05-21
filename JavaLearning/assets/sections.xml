@@ -109,7 +109,7 @@
             "id": "16",
             "lesson_id": "3",
             "media_type": "2",
-            "text": "<b>Type</b>\t\t\t\t\t\t\t\t\t\t\t\t<b>Size (bits)</b><br/>byte\t\t\t\t\t\t\t\t\t\t\t\t8<br/>char\t\t\t\t\t\t\t\t\t\t\t\t16<br/>short\t\t\t\t\t\t\t\t\t\t\t\t16<br/>int\t\t\t\t\t\t\t\t\t\t\t\t\t32<br/>float\t\t\t\t\t\t\t\t\t\t\t\t32<br/>double\t\t\t\t\t\t\t\t\t\t\t64<br/>long\t\t\t\t\t\t\t\t\t\t\t\t64",
+            "text": "<b>Type</b>\t\t\t\t\t\t\t\t\t\t\t\t<b>Size (bits)</b><br/>byte\t\t\t\t\t\t\t\t\t\t\t\t8<br/>char\t\t\t\t\t\t\t\t\t\t\t\t16<br/>short\t\t\t\t\t\t\t\t\t\t\t16<br/>int\t\t\t\t\t\t\t\t\t\t\t\t\t32<br/>float\t\t\t\t\t\t\t\t\t\t\t32<br/>double\t\t\t\t\t\t\t\t\t\t64<br/>long\t\t\t\t\t\t\t\t\t\t\t\t64",
             "image": ""
         },
         {
@@ -187,6 +187,209 @@
             "lesson_id": "4",
             "media_type": "1",
             "text": "Integer literals may be assigned to any numeric primitive data type. There are 3 types : default is decimal, octal will start with a 0 (zero) prefix, and hexadecimal prefix with an 0x or 0X, and the hex digits are insensitve",
+            "image": ""
+        }
+        ,{
+            "id": "28",
+            "lesson_id": "4",
+            "media_type": "4",
+            "text": "Note : the suffix F or f, indicating a float literal, such as 1.234f, the suffix D or d for a double literal, such as 12.34D",
+            "image": ""
+        }
+        ,{
+            "id": "29",
+            "lesson_id": "5",
+            "media_type": "1",
+            "text": "<h1>\tArray</h1>A Java array is an ordered collection of primitives, object references or other arrays, all elements of an array must be of the same type",
+            "image": ""
+        }
+        ,{
+            "id": "30",
+            "lesson_id": "5",
+            "media_type": "1",
+            "text": "\tTo create and use an array, you must follow three steps:<br/>1. Declaration<br/>2. Construction<br/>3. Initialization",
+            "image": ""
+        }
+        ,{
+            "id": "31",
+            "lesson_id": "5",
+            "media_type": "2",
+            "text": "1. int[] ints;\t\t\t\t\t\t\t\t// Step 1 : Declaration to the compiler<br/>2. ints = new int[25];\t\t// Step 2 : Runtime construction",
+            "image": ""
+        }
+        ,{
+            "id": "32",
+            "lesson_id": "5",
+            "media_type": "1",
+            "text": "Declaration and constructor may be formed in a single line : ",
+            "image": ""
+        }
+        ,{
+            "id": "33",
+            "lesson_id": "5",
+            "media_type": "2",
+            "text": "1. int[] ints = new int[25];",
+            "image": ""
+        }
+        ,{
+            "id": "34",
+            "lesson_id": "5",
+            "media_type": "1",
+            "text": "Declaration and constructor may be formed in a single line : ",
+            "image": ""
+        }
+        ,{
+            "id": "35",
+            "lesson_id": "5",
+            "media_type": "4",
+            "text": "Note : When an array is constructed, its elements are automatically initialized to their default values. Numerical elements are initialized to 0 and object reference will be initialized to null;",
+            "image": ""
+        }
+        ,{
+            "id": "36",
+            "lesson_id": "5",
+            "media_type": "2",
+            "text": "<b>Type</b>\t\t\t\t\t\t\t\t\t\t\t\t<b>Initial Value (bits)</b><br/>byte\t\t\t\t\t\t\t\t\t\t\t\t0<br/>int\t\t\t\t\t\t\t\t\t\t\t\t\t0<br/>float\t\t\t\t\t\t\t\t\t\t\t0.0F<br/>char\t\t\t\t\t\t\t\t\t\t\t\t\'\\u0000\'<br/>object\t\t\t\t\t\t\t\t\t\tnull<br/>short\t\t\t\t\t\t\t\t\t\t\t0<br/>long\t\t\t\t\t\t\t\t\t\t\t\t0L<br/>double\t\t\t\t\t\t\t\t\t\t0.0D<br/>boolean\t\t\t\t\t\t\t\tfalse",
+            "image": ""
+        }
+        ,{
+            "id": "37",
+            "lesson_id": "5",
+            "media_type": "1",
+            "text": "You can also create a custom initialized array like this which elements are specified : ",
+            "image": ""
+        }
+        ,{
+            "id": "38",
+            "lesson_id": "5",
+            "media_type": "2",
+            "text": "1. float[] diameters = {1.1f, 2.2f, 3.3f, 4.4f, 5.5f};",
+            "image": ""
+        }
+        ,{
+            "id": "39",
+            "lesson_id": "5",
+            "media_type": "1",
+            "text": "The first element is at array index 0 :",
+            "image": ""
+        }
+        ,{
+            "id": "40",
+            "lesson_id": "5",
+            "media_type": "2",
+            "text": "1. long[] squares;<br/>2. squares = new long[6000];<br/>3. for (int i = 0; i < 6000; i++) {<br/>4. \t\tsquares[i] = i * i;<br/>5. }",
+            "image": ""
+        }
+        ,{
+            "id": "41",
+            "lesson_id": "6",
+            "media_type": "1",
+            "text": "The wrong way to think about multi-dimens array : the physical memory address of next row is right after the current row.",
+            "image": ""
+        }
+        ,{
+            "id": "42",
+            "lesson_id": "6",
+            "media_type": "3",
+            "text": "",
+            "image": "image/image_5.png"
+        }
+        ,{
+            "id": "43",
+            "lesson_id": "6",
+            "media_type": "1",
+            "text": "The right way to think about multi-dimens array : each row has a pointer point to diffirent memory address which is not right after previous row pointer.",
+            "image": ""
+        }
+        ,{
+            "id": "44",
+            "lesson_id": "6",
+            "media_type": "3",
+            "text": "",
+            "image": "image/image_6.png"
+        }
+        ,{
+            "id": "45",
+            "lesson_id": "6",
+            "media_type": "1",
+            "text": "That's why you can declare an array like this : ",
+            "image": ""
+        }
+        ,{
+            "id": "46",
+            "lesson_id": "6",
+            "media_type": "2",
+            "text": "int[][] myInts = { {1, 2, 3}, {91, 92, 93, 94}, {2001, 2002} }",
+            "image": ""
+        }
+        ,{
+            "id": "47",
+            "lesson_id": "7",
+            "media_type": "1",
+            "text": "<h1>The main() Method</h1>The main() method is the entry point for standalone Java applications",
+            "image": ""
+        }
+        ,{
+            "id": "47",
+            "lesson_id": "7",
+            "media_type": "1",
+            "text": "To create an application, you write a class definition that includes a main() method. The signature for main() is :",
+            "image": ""
+        }
+        ,{
+            "id": "48",
+            "lesson_id": "7",
+            "media_type": "2",
+            "text": "public static void main(String[] args)",
+            "image": ""
+        }
+        ,{
+            "id": "49",
+            "lesson_id": "7",
+            "media_type": "1",
+            "text": "The main() method must be public so that the JVM can call it. It is static so that it can be executed without the necessity of constructing an instance of the application class. The return type must be void.",
+            "image": ""
+        }
+        ,{
+            "id": "50",
+            "lesson_id": "7",
+            "media_type": "1",
+            "text": "The argument to main() is a single-dimension array of Strings, containing any arguments that the user might have entered on the command line",
+            "image": ""
+        }
+		,{
+            "id": "51",
+            "lesson_id": "8",
+            "media_type": "1",
+            "text": "<h1>Variables and Initialization</h1>Java supports variables of three different lifetimes",
+            "image": ""
+        }
+        ,{
+            "id": "52",
+            "lesson_id": "8",
+            "media_type": "1",
+            "text": "<b>1.</b> Member variable : A member variable of a class is created when an instance is created and it is destroyed when object is destroyed",
+            "image": ""
+        }
+        ,{
+            "id": "53",
+            "lesson_id": "8",
+            "media_type": "1",
+            "text": "<b>1.</b> Member variable : A member variable of a class is created when an instance is created and it is destroyed when object is destroyed",
+            "image": ""
+        }
+        ,{
+            "id": "54",
+            "lesson_id": "8",
+            "media_type": "1",
+            "text": "<b>1.</b> Member variable : A member variable of a class is created when an instance is created and it is destroyed when object is destroyed",
+            "image": ""
+        }
+        ,{
+            "id": "55",
+            "lesson_id": "8",
+            "media_type": "1",
+            "text": "<b>3.</b> Member variable : A member variable of a class is created when an instance is created and it is destroyed when object is destroyed",
             "image": ""
         }
     ]
