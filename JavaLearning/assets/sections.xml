@@ -375,21 +375,77 @@
             "id": "53",
             "lesson_id": "8",
             "media_type": "1",
-            "text": "<b>1.</b> Member variable : A member variable of a class is created when an instance is created and it is destroyed when object is destroyed",
+            "text": "<b>2.</b> Automatic variable An automatic variable of a method is created on entry to the method and exists only during execution of the method",
             "image": ""
         }
         ,{
             "id": "54",
             "lesson_id": "8",
             "media_type": "1",
-            "text": "<b>1.</b> Member variable : A member variable of a class is created when an instance is created and it is destroyed when object is destroyed",
+            "text": "<b>3.</b> Class variable A class variable (also known as a static variable) is created when the class is loaded and is destroyed when the class is unloaded",
             "image": ""
         }
         ,{
             "id": "55",
             "lesson_id": "8",
+            "media_type": "4",
+            "text": "Note : There is only one copy of a class variable, and it exists regardless of the number of instances of the class, even if the class is never instantiated",
+            "image": ""
+        }
+        ,{
+            "id": "56",
+            "lesson_id": "9",
             "media_type": "1",
-            "text": "<b>3.</b> Member variable : A member variable of a class is created when an instance is created and it is destroyed when object is destroyed",
+            "text": "All member variables that are not explicitly assigned a value will automatically be assigned an initial value which the same as default value in the previous lesson",
+            "image": ""
+        }
+        ,{
+            "id": "56",
+            "lesson_id": "9",
+            "media_type": "1",
+            "text": "Or member variables may be explicitly assigned like this : ",
+            "image": ""
+        }
+        ,{
+            "id": "56",
+            "lesson_id": "9",
+            "media_type": "2",
+            "text": "1. class TestVariables {<br/>2. \t\tint x = 20;<br/>3. \t\tstatic int y = 30;",
+            "image": ""
+        }
+        ,{
+            "id": "57",
+            "lesson_id": "9",
+            "media_type": "1",
+            "text": "in the above example in each time the an TestVariables object is created, the x and y variable will has the value 20, 30",
+            "image": ""
+        }
+        ,{
+            "id": "58",
+            "lesson_id": "9",
+            "media_type": "4",
+            "text": "Note : the member variable can be assigned to initial value, but the method local variable is not initiazled before used.",
+            "image": ""
+        }
+        ,{
+            "id": "59",
+            "lesson_id": "9",
+            "media_type": "1",
+            "text": "The wrong way to forget initialize method local variable will cause the error :",
+            "image": ""
+        }
+        ,{
+            "id": "60",
+            "lesson_id": "9",
+            "media_type": "2",
+            "text": "1. public int wrong() {<br/>2. \t\tint i;<br/>3. \t\treturn i+5;<br/>4. }",
+            "image": ""
+        }
+        ,{
+            "id": "60",
+            "lesson_id": "9",
+            "media_type": "1",
+            "text": "You may need to initialize the method variables after using to avoid the error",
             "image": ""
         }
     ]
