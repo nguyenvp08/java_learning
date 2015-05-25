@@ -249,7 +249,7 @@
             "id": "36",
             "lesson_id": "5",
             "media_type": "2",
-            "text": "<b>Type</b>\t\t\t\t\t\t\t\t\t\t\t\t<b>Initial Value (bits)</b><br/>byte\t\t\t\t\t\t\t\t\t\t\t\t0<br/>int\t\t\t\t\t\t\t\t\t\t\t\t\t0<br/>float\t\t\t\t\t\t\t\t\t\t\t0.0F<br/>char\t\t\t\t\t\t\t\t\t\t\t\t\'\\u0000\'<br/>object\t\t\t\t\t\t\t\t\t\tnull<br/>short\t\t\t\t\t\t\t\t\t\t\t0<br/>long\t\t\t\t\t\t\t\t\t\t\t\t0L<br/>double\t\t\t\t\t\t\t\t\t\t0.0D<br/>boolean\t\t\t\t\t\t\t\tfalse",
+            "text": "<b>Type</b>\t\t\t\t\t\t\t\t\t\t\t\t<b>Initial Value (bits)</b><br/>byte\t\t\t\t\t\t\t\t\t\t\t\t0<br/>int\t\t\t\t\t\t\t\t\t\t\t\t\t0<br/>float\t\t\t\t\t\t\t\t\t\t\t0.0F<br/>char\t\t\t\t\t\t\t\t\t\t\t\t\\u0000<br/>object\t\t\t\t\t\t\t\t\t\tnull<br/>short\t\t\t\t\t\t\t\t\t\t\t0<br/>long\t\t\t\t\t\t\t\t\t\t\t\t0L<br/>double\t\t\t\t\t\t\t\t\t\t0.0D<br/>boolean\t\t\t\t\t\t\t\tfalse",
             "image": ""
         }
         ,{
@@ -442,10 +442,234 @@
             "image": ""
         }
         ,{
-            "id": "60",
+            "id": "61",
             "lesson_id": "9",
             "media_type": "1",
             "text": "You may need to initialize the method variables after using to avoid the error",
+            "image": ""
+        }
+        ,{
+            "id": "62",
+            "lesson_id": "9",
+            "media_type": "2",
+            "text": "int i = 0;",
+            "image": ""
+        }
+        ,{
+            "id": "63",
+            "lesson_id": "10",
+            "media_type": "1",
+            "text": "<h1>Argument Passing</h1>Many programming language has 2 types of argument passing : by reference or by value, in Java, By Value is the only way to pass argument",
+            "image": ""
+        }
+        ,{
+            "id": "63",
+            "lesson_id": "10",
+            "media_type": "1",
+            "text": "When an argument is passed into a method, changes to the argument value by the method do not affect the original data. Consider the following method:",
+            "image": ""
+        }
+         ,{
+            "id": "64",
+            "lesson_id": "10",
+            "media_type": "2",
+            "text": "1. public void bumper(int bumpMe) {<br/>2. \t\tbumpMe += 15;<br/>3. }",
+            "image": ""
+        }
+        ,{
+            "id": "63",
+            "lesson_id": "10",
+            "media_type": "1",
+            "text": "Or Modifying the object reference to point to another object doesn't make the change onto original object.",
+            "image": ""
+        }
+        ,{
+            "id": "64",
+            "lesson_id": "10",
+            "media_type": "2",
+            "text": "1. public void cannotChangeObject(Object orginalObject) {<br/>2. \t\torginalObject = null;<br/>3. }",
+            "image": ""
+        }
+        ,{
+            "id": "65",
+            "lesson_id": "10",
+            "media_type": "1",
+            "text": "After these example methods is called in realtime, the variable is passed onto the method still doesn't change",
+            "image": ""
+        }
+        ,{
+            "id": "66",
+            "lesson_id": "11",
+            "media_type": "1",
+            "text": "To understand the process, you must known about : Java programs do not deal directly with the memory address of object, when a object is constructed, it return the pointer to the physical memory of this object. Many pointer can point to the same physical memory",
+            "image": ""
+        }
+        ,{
+            "id": "67",
+            "lesson_id": "11",
+            "media_type": "1",
+            "text": "You can see the example below : ",
+            "image": ""
+        }
+        ,{
+            "id": "68",
+            "lesson_id": "11",
+            "media_type": "2",
+            "text": "1. Button btn;<br/>2. btn = new Button(\"Ok\");",
+            "image": ""
+        }
+        ,{
+            "id": "69",
+            "lesson_id": "11",
+            "media_type": "1",
+            "text": "After line 2, the btn variable is pointing to the physical memory of new constructed Button object, and there is only one pointer pointing to this addess.",
+            "image": ""
+        }
+        ,{
+            "id": "70",
+            "lesson_id": "11",
+            "media_type": "1",
+            "text": "Now back to the example method \"cannotModifiy\", when this method is called, a object is pass onto, Java will create a copy of the pointer (not all the physical memory) ",
+            "image": ""
+        }
+        ,{
+            "id": "71",
+            "lesson_id": "11",
+            "media_type": "1",
+            "text": "So if you make the copy pointer point to another object, the original one (before method called) still doesn't change, that is the reason why",
+            "image": ""
+        }
+        ,{
+            "id": "72",
+            "lesson_id": "11",
+            "media_type": "4",
+            "text": "The value of primitive type variable can not change after a function called. You can edit the member variables by passing the whole object pointer",
+            "image": ""
+        }
+        ,{
+            "id": "73",
+            "lesson_id": "12",
+            "media_type": "1",
+            "text": "If you want to modify primitive you have wrap this primitive into a object reference, maybe like that : ",
+            "image": ""
+        }
+        ,{
+            "id": "74",
+            "lesson_id": "12",
+            "media_type": "3",
+            "text": "",
+            "image": "image/image_6.png"
+        }
+         ,{
+            "id": "75",
+            "lesson_id": "13",
+            "media_type": "1",
+            "text": "<h1>Garbage Collection</h1>In some programming language, such as C/C++, you can allocate data storage, and maybe you have to manage the allocated memory, you can cause a memory leak when you make them unreachable",
+            "image": ""
+        }
+        ,{
+            "id": "76",
+            "lesson_id": "13",
+            "media_type": "1",
+            "text": "In Java you can allocate memory directly by using new operator, method locals and arguments are allocated space on the stack, so when the method exists, the allocated objects are still on the heap and have a longer lifetime",
+            "image": ""
+        }
+        ,{
+            "id": "77",
+            "lesson_id": "13",
+            "media_type": "2",
+            "text": "public void aMethod() {<br/>\t\tVariableClass variableReference = new VariableClass();<br/>}",
+            "image": ""
+        }
+        ,{
+            "id": "78",
+            "lesson_id": "13",
+            "media_type": "1",
+            "text": "In the example above, you can see an object has been initialized and then method ends, so what happend with this object after method execution, in the C/C++ language you may make a memory leak, because of this object can not be reach anymore.",
+            "image": ""
+        }
+        ,{
+            "id": "79",
+            "lesson_id": "13",
+            "media_type": "1",
+            "text": "And the difficulty is that maybe you don't know where to release the object to avoid memory leak, if it happens to early it can cause crash if using a recycled object",
+            "image": ""
+        }
+        ,{
+            "id": "80",
+            "lesson_id": "14",
+            "media_type": "1",
+            "text": "So Java has created a system that will have you to manage the leak memomy and release them. This work is usually done in the background by a low-priority thread that is referred to as the garbage collector.",
+            "image": ""
+        }
+        ,{
+            "id": "81",
+            "lesson_id": "14",
+            "media_type": "4",
+            "text": "You may know that in Java, you never explicitly free memory that you have allocated.",
+            "image": ""
+        }
+        ,{
+            "id": "82",
+            "lesson_id": "14",
+            "media_type": "1",
+            "text": "When the garbage collector finds memory that is no longer accessible from any live thread (the object is out of scope), it takes steps to release it back into the heap for re-use",
+            "image": ""
+        }
+        ,{
+            "id": "83",
+            "lesson_id": "14",
+            "media_type": "1",
+            "text": "Specifically, the garbage collector calls the class destructor method called finalize() (if it is defined) and then frees the memory",
+            "image": ""
+        }
+        ,{
+            "id": "84",
+            "lesson_id": "15",
+            "media_type": "1",
+            "text": "<h1>Java platform overview</h1>Java technology is used to develop applications for a wide range of environments, from consumer devices to heterogeneous enterprise systems",
+            "image": ""
+        }
+        ,{
+            "id": "85",
+            "lesson_id": "15",
+            "media_type": "1",
+            "text": "Like any programming language, the Java language has its own structure, syntax rules, and programming paradigm",
+            "image": ""
+        }
+        ,{
+            "id": "86",
+            "lesson_id": "15",
+            "media_type": "1",
+            "text": "The Java language's programming paradigm is based on the concept of object-oriented programming (OOP)",
+            "image": ""
+        }
+        ,{
+            "id": "87",
+            "lesson_id": "15",
+            "media_type": "1",
+            "text": "Like any language, Java also has a compiler that will compile the the source code to byte code that has the .class extension.",
+            "image": ""
+        }
+        ,{
+            "id": "88",
+            "lesson_id": "15",
+            "media_type": "1",
+            "text": "After we have class files, Java has created a JVM (Java Virtual Machine) to interprete and executes the program's instructions on the native hardware platform for which the JVM was written. The JVM is the heart of the Java language's \"write-once, run-anywhere\" principle",
+            "image": ""
+        }
+        ,{
+            "id": "89",
+            "lesson_id": "16",
+            "media_type": "1",
+            "text": "<h1>The Java Development Kit</h1>To be able to develope applications in Java platform, you need to have a Java Development Kit, that is briefly called JDK. JDK has the complete class library of Java for developers",
+            "image": ""
+        }
+        ,{
+            "id": "90",
+            "lesson_id": "16",
+            "media_type": "1",
+            "text": "Inside of JDK, there is already a JRE (Java Runtime Enviroment), includes the JVM, code libraries, and components that are necessary for running programs written in the Java language. It is available for multiple platforms",
             "image": ""
         }
     ]

@@ -1,0 +1,58 @@
+{
+    "chapters": [
+        {
+            "id": "1",
+            "name": "Chapter 1",
+            "description": "Language Fundamentals",
+            "image": ""
+        },
+        {
+            "id": "2",
+            "name": "Chapter 2",
+            "description": "Operators and Assignments",
+            "image": ""
+        },
+        {
+            "id": "3",
+            "name": "Chapter 3",
+            "description": "Modifiers",
+            "image": ""
+        },
+        {
+            "id": "4",
+            "name": "Chapter 4",
+            "description": "Converting and Casting",
+            "image": ""
+        },
+        {
+            "id": "5",
+            "name": "Chapter 5",
+            "description": "Flow Control, Assertions, and Exception Handling",
+            "image": ""
+        },
+        {
+            "id": "6",
+            "name": "Chapter 6",
+            "description": "Objects and Classes",
+            "image": ""
+        },
+        {
+            "id": "7",
+            "name": "Chapter 7",
+            "description": "Threads",
+            "image": ""
+        },
+        {
+            "id": "8",
+            "name": "Chapter 8",
+            "description": "The java.lang and java.util Packages",
+            "image": ""
+        },
+        {
+            "id": "9",
+            "name": "Chapter 9",
+            "description": "IO and Streams",
+            "image": ""
+        }
+    ]
+}
