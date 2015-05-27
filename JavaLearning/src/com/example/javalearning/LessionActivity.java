@@ -1,12 +1,21 @@
 package com.example.javalearning;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.util.List;
 
-import android.annotation.SuppressLint;
+import com.example.javalearning.model.Sections;
+import com.example.javalearning.model.Lessions.Lesson;
+import com.example.javalearning.model.Sections.Section;
+import com.example.javalearning.util.Constants;
+import com.example.javalearning.util.SectionUtil;
+import com.example.javalearning.util.StoreUtil;
+import com.example.javalearning.view.ConsolaContentView;
+import com.example.javalearning.view.FitWidthImageView;
+import com.example.javalearning.view.NoteView;
+import com.example.javalearning.view.TextContentView;
+
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Build;
@@ -15,37 +24,31 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 
-import com.example.javalearning.model.Sections;
-import com.example.javalearning.model.Sections.Section;
-import com.example.javalearning.util.StoreUtil;
-import com.example.javalearning.view.ConsolaContentView;
-import com.example.javalearning.view.FitWidthImageView;
-import com.example.javalearning.view.NoteView;
-import com.example.javalearning.view.TextContentView;
-
-public class MainActivity extends Activity {
-
+public class LessionActivity extends Activity {
+	
 	private LinearLayout mRootLayout;
-
+	private Lesson mLesson;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-		initView();
+		setContentView(R.layout.layout_lession);
+		parseIntent(getIntent());
+		initViews();
+	}
+	
+	private void parseIntent(Intent intent) {
+		Bundle bundle = intent.getExtras();
+		if (bundle != null) {
+			mLesson = (Lesson) intent.getSerializableExtra(Constants.EXTRA_LESSON_DATA);
+		}
 	}
 
-	@SuppressLint("NewApi")
-	private void initView() {
+	private void initViews() {
 		mRootLayout = (LinearLayout) findViewById(R.id.layout_root);
-
-		try {
-			StoreUtil.loadContent(getAssets());
-		} catch (IOException e1) {
-			e1.printStackTrace();
-		}
-		
 		Sections sections = StoreUtil.mSections;
-		for (Section section : sections.sectionList) {
+		List<Section> sectionList = SectionUtil.findSectionOfLesson(mLesson, sections);
+		for (Section section : sectionList) {
 			if (section.mediaType == 1) {
 				TextContentView contentView = new TextContentView(this);
 				mRootLayout.addView(contentView);
@@ -93,19 +96,5 @@ public class MainActivity extends Activity {
 				noteView.setText(section.text);
 			}
 		}
-	}
-
-	private String getContentOfFile(InputStream is) throws IOException {
-		StringBuilder sb = new StringBuilder();
-
-		BufferedReader br = new BufferedReader(new InputStreamReader(is));
-		String line = null;
-		while ((line = br.readLine()) != null) {
-			sb.append(line);
-		}
-		br.close();
-		is.close();
-
-		return sb.toString();
 	}
 }
